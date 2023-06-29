@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="XsdDomain.fs" />
+    <Compile Include="XsdFactory.fs" />
+    <Compile Include="LexicalMappings.fs" />
+    <Compile Include="ConstrainedGenerators.fs" />
+    <Compile Include="FacetBasedGenerators.fs" />
+    <Compile Include="CustomGenerators.fs" />
+    <Compile Include="AtomicGenerators.fs" />
+    <Compile Include="XmlGenerator.fs" />
+    <Compile Include="XmlElementGenerator.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fare" Version="2.2.1" />
+    <PackageReference Include="FsCheck" Version="2.16.5" />
+    <PackageReference Include="FSharp.Formatting" Version="18.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="7.0.200" />
+  </ItemGroup>
+
+</Project>
